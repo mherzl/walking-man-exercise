@@ -1,15 +1,13 @@
 var man = document.getElementById('man');
+var body = document.getElementById('body');
 
-man.style.border="solid red 10px";
-
-man.style.display="inline-block";
 man.style.position="absolute";
 man.style.left="0px";
 
 var manPos = 0;
 var advance = 1;
 var setManPos = function(e) {
-  if(manPos >= 400){
+  if(manPos >= 900){
     advance = -1;
     man.style.transform="rotateY(180deg)";
   }
